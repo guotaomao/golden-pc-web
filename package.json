@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "element-ui": "^2.13.2",
     "nuxt": "^2.14.6"
   },

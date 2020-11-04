@@ -8,6 +8,9 @@
 import Section from '../components/section'
 export default {
   layout: 'default',
+  asyncData() {
+    console.log('process.env', process.env.NODE_ENV, process.env.BASE_URL)
+  },
   components: {
     Section
   }
