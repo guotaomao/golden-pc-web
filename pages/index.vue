@@ -5,8 +5,12 @@
 </template>
 
 <script>
+import Section from '../components/section'
 export default {
-  layout: 'default'
+  layout: 'default',
+  components: {
+    Section
+  }
 }
 </script>
 

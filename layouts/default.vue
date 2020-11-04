@@ -8,8 +8,8 @@
 
 <style>
 html {
+  min-width: 1200px;
   font-family: PingFangSC-Regular, PingFang SC;
-  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
