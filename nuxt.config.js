@@ -44,4 +44,20 @@ export default {
   build: {
     transpile: [/^element-ui/],
   }
+  // modules: [
+  //   '@nuxtjs/axios',
+  //   '@nuxtjs/proxy'
+  // ],
+  // axios: {
+  //   proxy: true,
+  //   baseURL: process.env.BASE_URL,
+  // },
+  // proxy: {
+  //   '/api': {
+  //     target: process.env.BASE_URL,
+  //     pathRewrite: {
+  //       '^/api' : '/'
+  //     }
+  //   }
+  // }
 }

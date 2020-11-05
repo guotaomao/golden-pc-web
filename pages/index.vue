@@ -6,10 +6,12 @@
 
 <script>
 import Section from '../components/section'
+import {getUserInfo} from '../api/user'
 export default {
   layout: 'default',
-  asyncData() {
-    console.log('process.env', process.env.NODE_ENV, process.env.BASE_URL)
+  async asyncData() {
+    let data = await getUserInfo()
+    console.log('data', data)
   },
   components: {
     Section
