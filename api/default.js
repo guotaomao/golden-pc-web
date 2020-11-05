@@ -14,7 +14,7 @@ instance.interceptors.request.use(
         return config
     },
     (error) => {
-        console.log('error', error)
+        // console.log('error', error)
         return Promise.reject(error)
     }
 )
@@ -22,7 +22,7 @@ instance.interceptors.request.use(
 instance.interceptors.response.use(
     (response) => {
         // 对响应数据做点事
-        console.log('response', response)
+        // console.log('response', response)
         return response
     },
     (error) => {

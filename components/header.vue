@@ -43,6 +43,7 @@ export default {
     align-items: center;
     height: 100px;
     background-color: white;
+    border-bottom: 1px solid #333;
  }
 
  .header-wrapper {

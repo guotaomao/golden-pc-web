@@ -11,8 +11,8 @@ export default {
   layout: 'default',
   middleware: 'http-proxy-middleware',
   async asyncData() {
-    // let data = await getUserInfo()
-    // console.log('data', data)
+    let { data } = await getUserInfo()
+    console.log('data', data)
   },
   components: {
     Section
@@ -24,6 +24,7 @@ export default {
 .container {
   margin: 0 auto;
   min-height: calc(100vh - 760px);
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;

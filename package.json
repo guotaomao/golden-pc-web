@@ -7,8 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest",
-    "server": "node middleware/http-proxy-middleware.js"
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.21.0",
