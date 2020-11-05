@@ -1,5 +1,4 @@
 require('dotenv').config({path: `.env.${process.env.NODE_ENV}`})
-console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { headers } from './config'
-console.log('process.env.BASE_URL,', process.env.BASE_URL)
+
 const instance = axios.create({
     baseURL: process.env.BASE_URL,
     headers: { ...headers },

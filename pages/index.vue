@@ -9,9 +9,10 @@ import Section from '../components/section'
 import {getUserInfo} from '../api/user'
 export default {
   layout: 'default',
+  middleware: 'http-proxy-middleware',
   async asyncData() {
-    let data = await getUserInfo()
-    console.log('data', data)
+    // let data = await getUserInfo()
+    // console.log('data', data)
   },
   components: {
     Section
