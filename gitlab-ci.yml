@@ -1,0 +1,40 @@
+# 定义 setup、build、deploy 三个stages
+stages:
+  - setup
+  - build
+  - deploy
+
+# 定义 setup 阶段的一个job
+setup-job:
+  stage: setup
+  only:
+    - develop
+    - master
+  script:
+    - echo 'hello , test-job'
+    - echo 'i am in test stage'
+    - pwd
+    - yarn
+
+# 定义 build 阶段的一个job
+build-job:
+  stage: build
+  only:
+    - develop
+    - master
+  script:
+    - echo 'hello build-job'
+    - echo 'i am in build stage'
+    - pwd
+
+# 定义 deploy 阶段的一个job
+deploy-job:
+  stage: deploy
+  only:
+    - develop
+    - master
+  script:
+    - echo 'hello deploy-job'
+    - echo 'i am in deploy stage'
+    - pwd
+    - yarn start
